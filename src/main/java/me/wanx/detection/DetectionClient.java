@@ -70,8 +70,11 @@ public class DetectionClient {
 	}
 	
 	public static void main(String[] args) {
-		DetectionClient client = new DetectionClient("localhost",9999);
-		client.client();
+//		DetectionClient client = new DetectionClient("localhost",9999);
+//		client.client();
+		ClassLoader cl = DetectionClient.class.getClassLoader();
+		System.out.println(cl);
+		System.out.println(cl.getParent());
 	}
 
 }
